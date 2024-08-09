@@ -1,0 +1,30 @@
+GET http://localhost:5203/games
+
+###
+GET http://localhost:5203/games/1
+
+
+### 
+POST http://localhost:5203/games
+Content-Type: application/json
+
+{
+    "name": "Dark Souls 2", 
+    "genreid": 3,
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5203/games/1
+Content-Type: application/json
+
+{
+    "name": "Skyrim",
+    "genreId": 5,
+    "price": 59.99,
+    "releaseDate": "2012-10-01"
+}
+
+###
+DELETE http://localhost:5203/games/3
